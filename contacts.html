@@ -2,6 +2,83 @@
 permalink: /contacts
 layout: default
 ---
+<style>
+    .first_p{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 28px;
+        line-height: 33px;
+        color:white
+    }
+    .second_p{
+        font-size: 13px;
+        color:white
+    }
+    .card-body{
+        font-weight: bold;
+        font-family: Inter ;
+        color: black
+    }
+    @media (max-width: 576px) { 
+        .first_p , .second_p{
+          text-align:center;
+        }
+        .socials{
+            display: none;
+        }
+    }
+    button{
+        background-color:black;
+        color:white;
+        padding:7px 20px;
+        border-radius: 10px;
+    }
+</style>
 
-
-work in progress..
+<div class="container my-5">
+    <div class="row">
+        <div class="col-sm">
+            <p class="first_p">
+                Sei un'azienda o hai qualche progetto interessante da presentarmi?<br>
+                Teniamoci in contatto!
+            </p>
+            <p class="second_p">E' sempre bello scambiarsi idee e fare nuove conoscenze. Se il mio profilo ti interessa non pensarci due volte a scrivermi!</p>
+            <div class="socials">
+                {% for s in site.social_media %}
+                    <a href="{{s.url}}" class="mx-1"><img src="{{site.url_images}}/{{s.social}}.svg" width="20px" alt="{{s.social}}"></a>
+                {% endfor %} 
+            </div>
+        </div>
+        <div class="col-sm ">
+            <div class=" m-2 card text-center">
+                <div class="card-body">
+                    <p> Contattami </p>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-sm my-1">
+                                <input type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="col-sm my-1">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col my-1">
+                                <div class="row ">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Number">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Link">
+                                    </div>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="3" placeholder="Scrivi qualcosa" ></textarea>
+                            <div class="my-3">
+                                <button disabled type="submit"><b>Invio<b></button>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
