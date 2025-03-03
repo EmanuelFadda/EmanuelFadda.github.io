@@ -35,7 +35,7 @@ layout: default
     }
 </style>
 
-<div class="container my-5">
+<div class="container mx-auto my-auto ">
     <div class="row">
         <div class="col-sm">
             <p class="first_p">
@@ -64,14 +64,14 @@ layout: default
                             <div class="col my-1">
                                 <div class="row ">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="Number">
+                                        <input type="text"  pattern="[0-9]{15}" class="form-control" placeholder="Number">
                                     </div>
                                     <div class="col">
                                         <input type="text" class="form-control" placeholder="Link">
                                     </div>
                                 </div>
                             </div>
-                            <textarea class="form-control" rows="3" placeholder="Scrivi qualcosa" ></textarea>
+                            <textarea class="form-control" rows="5" placeholder="Scrivi qualcosa" ></textarea>
                             <div class="my-3">
                                 <button disabled type="submit"><b>Invio<b></button>
                             </div>

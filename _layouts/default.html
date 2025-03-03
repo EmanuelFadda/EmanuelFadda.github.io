@@ -10,15 +10,49 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <style>
         body{
-        background-color: #7937A6;
-      }
+            background-color: #7937A6;
+            width:100%;
+            height: 100%;
+        }
+        #site{
+            position:fixed;
+            padding:0;
+            margin:0;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            overflow: auto;
+        }
+        #header{}
+
+        #content{
+            flex-grow:1;
+            display:flex;
+            flex-direction: column;
+        }
+        
+        #center-content{ flex-grow: 1; }
+        
+        #bottom-content{ }
+
     </style>
 </head>
 <body>
-    {% include header.html %}    
-        {{ content }}
-    
-    {% include footer.html %}
-
+    <div id="site">
+        <div class="sticky-top" id="header">
+            {% include header.html %}  
+        </div>
+        <div id="content">
+            <div id="center-content" class="d-flex">
+                {{ content }}
+            </div>
+            <div id="bottom-content">
+                {% include footer.html %}
+            </div>
+        </div>
+    </div>
 </body>
 </html>
