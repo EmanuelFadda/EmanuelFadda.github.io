@@ -33,11 +33,17 @@ layout: default
         padding:7px 20px;
         border-radius: 10px;
     }
+
+    @media (min-width: 992px) { 
+        #main_page{
+            max-width: 60%;
+        }
+    }
 </style>
 
-<div class="container my-auto mx-auto">
+<div id="main_page" class="container my-auto">
     <div class="row">
-        <div class="col-sm my-auto">
+        <div class="col-md my-auto">
             <p class="first_p">
                 Sei un'azienda o hai qualche progetto interessante da presentarmi?<br>
                 Teniamoci in contatto!
@@ -49,7 +55,7 @@ layout: default
                 {% endfor %} 
             </div>
         </div>
-        <div class="col-sm ">
+        <div class="col-md ">
             <div class=" m-2 card text-center">
                 <div class="card-body">
                     <p> Contattami </p>

@@ -10,49 +10,65 @@ layout: default
         font-family: Georgia, serif;
     }
 
+    @media (min-width: 768px) { 
+        #main_page{
+            max-width: 70%;
+        }
+    }
+
+
 </style>
 
-<div id="main_page"  class="container">
-    {% if false %}
-    <div id="best_posts" class="">
-        <h2>Best of...</h2>
-        <div class="row justify-content-center">
-            <div class="col-9 text-center">
-                <h2>Titolo</h2>
-                <img src="assets/images/Gmail.svg" class="img-fluid">
+<div id="main_page"  class="container-md">
+    {% if site.posts.size == 0 %}
+        <p>No posts...yet.</p>
+    {% else %}
+        {% if false %}
+            <div id="best_posts" class="my-1">
+                <h2>Best of...</h2>
+                <div class="row justify-content-center">
+                    <div class="col-9 text-center">
+                        <h2>Titolo</h2>
+                        <img src="assets/images/Gmail.svg" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 row">
+                        <div class="col-12 m-2">
+                            post2
+                        </div>
+                        <hr class="m-0">
+                        <div class="col-12 m-2">
+                            post3
+                        </div>
+                        <hr class="m-0">
+                        <div class="col-12 m-2">
+                            post 4
+                        </div>
+                    </div>  
+                </div>
+                <hr>
             </div>
-            <div class="col-md-3 row">
-                <div class="col-12 m-2">
-                    post2
-                </div>
-                <hr class="m-0">
-                <div class="col-12 m-2">
-                    post3
-                </div>
-                <hr class="m-0">
-                <div class="col-12 m-2">
-                    post 4
-                </div>
-            </div>  
-        </div>
-     <hr>
-     {% endif %} 
-        <div id="recent_posts" class="row">
+        {% endif %} 
+        <div id="recent_posts" class="row my-1">
             <h2>Post recenti:</h2>
-            <div>
-                <div class="container">
-                    <h3>Title</h3>
-                    <p>wefwewedwed</p>
-                </div>
-                <hr>
-            </div>
-            <div>
-                <div class="container">
-                    <h3>Title</h3>
-                    <p>wefwewedwed</p>
-                </div>
-                <hr>
-            </div>
+                {% for post in site.posts %}
+                    <div>
+                        <a style="text-decoration: none;color:black" href="{{ post.url }}">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-truncate">
+                                        <h3>{{post.title}}</h3>
+                                    </div>
+                                    <div class="col text-center">
+                                        <p><span class="badge badge-pill bg-info my-auto">{{post.tag_name}}</span></p>
+                                    </div>
+                                    <div class="col text-center">{{ post.date | date_to_string }}</div>
+                                </div>
+                                <p>{{post.description}}</p>
+                            </div>
+                        </a>
+                        <hr>
+                    </div>
+                {% endfor %}
         </div>
-    </div>
+    {% endif %}
 </div>
