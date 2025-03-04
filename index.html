@@ -15,16 +15,20 @@ layout: default
         color:white;
         font-size:15px;
     }
-  
-    @media (max-width: 576px) { 
-        #intro{
-          text-align:center;
+
+    #intro{
+        text-align:center;
+    }
+    @media (min-width: 768px) { 
+        #main_page{
+            max-width: 70%;
         }
     }
+    
   
 </style>
 
-<div class="container mx-auto my-auto">
+<div id="main_page" class="container mx-auto my-auto">
   <div class="row">
     <div class="col mx-auto">
         <div class="row">
@@ -33,7 +37,9 @@ layout: default
                 <p>Ciao mi chiamo Emanuel Fadda, sono uno studente di informatica e questo è il mio sito</p>
                 <button onclick="location.href+='/about_me'"><b>About me</b></button>
             </div>
-            <div id="" class="col-sm"></div>
+        <!--<div style="display: none;" id="" class="col-sm"></div>
+            -->
+        
         </div> 
     </div>
     </div>
