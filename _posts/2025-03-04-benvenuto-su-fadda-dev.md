@@ -2,12 +2,14 @@
 layout: default_post
 title:  "Benvenuto su fadda.dev"
 date:   2025-03-04
-description: "Aggiornamenti sul sito"
+description: "Aggiornamenti del sito"
 url_image: ""
 tag_name: "blog"
 ---
 
 # Questa è il mio sito internet ! ✨
+
+
 
 Aggiornamenti 🎉:
 
