@@ -1,0 +1,19 @@
+
+- name: python-keylogger
+  description: Progetto che consiste nella simulazione di un attacco keylogger nella rete locale
+  github: https://github.com/EmanuelFadda/python-keylogger
+  tags: ["Python","Cybersecurity"]
+  link: 
+
+- name: MangaProject
+  description: Il progetto consiste nello sviluppo di una webapp Flask collegato a un database MySQL. Per l'uso di alcune funzionalità la webapp verrà affiancata a un'API di intelligenza artificiale (GPT-4)
+  github: https://github.com/EmanuelFadda/MangaProject
+  tags: ["Flask","MySQL"]
+  link: 
+
+- name: ProgettoPokeAPI
+  description: Pokedex Android in cui vengono mostrate le stats di ogni pokemon. Le informazioni sui pokemon sono stare raccolte attraverso l'utilizzo di PokeAPI
+  github: https://github.com/riccardo30set/ProgettoPokeAPI
+  tags: ["Android","Java"]
+  link: 
+

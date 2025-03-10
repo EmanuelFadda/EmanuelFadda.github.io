@@ -18,6 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  emoji: true
+
+
 title: Fadda.dev
 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -36,7 +42,6 @@ social_media:
   - social: Instagram
     username : ema_fadda
     url: https://www.instagram.com/ema_fadda/
-
 
 
 
@@ -65,3 +70,5 @@ social_media:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: markdown_default
 title:  "prova"
 date:   2025-02-26
 description: "questa è una descrizione di prova"
