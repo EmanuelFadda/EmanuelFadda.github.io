@@ -5,14 +5,15 @@ layout: default
 
 
 <style>
-    #main_page{
-        background-color: white;
+    #main_page{            
+        background-color: #181A1B;
+        color: white;
         font-family: Georgia, serif;
     }
 
     @media (min-width: 768px) { 
         #main_page{
-            max-width: 70%;
+            max-width: 700px;
         }
     }
 
@@ -52,16 +53,14 @@ layout: default
             <h2>Post recenti:</h2>
                 {% for post in site.posts %}
                     <div>
-                        <a style="text-decoration: none;color:black" href="{{ post.url }}">
+                        <a style="text-decoration: none;color:white" href="{{ post.url }}">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col text-truncate">
+                                    <div class="col-md text-truncate">
                                         <h3>{{post.title}}</h3>
                                     </div>
-                                    <div class="col text-center">
-                                        <p><span class="badge badge-pill bg-info my-auto">{{post.tag_name}}</span></p>
-                                    </div>
-                                    <div class="col text-center">{{ post.date | date_to_string }}</div>
+
+                                    <div class="col">{{ post.date | date_to_string }}</div>
                                 </div>
                                 <p>{{post.description}}</p>
                             </div>

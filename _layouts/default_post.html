@@ -4,5 +4,18 @@ layout: blog
 
 <!-- questo sarebbe il layout predefinito dei post-->
 
+<div>
+    <h1>{{page.title}}</h1> 
+    {% if page.image_url %}
+        <img src="{{page.url_image}}">
+    {% endif %}
+    
+</div>
+<hr>
+<div>
+    {{content}}
+</div>
 
-{{content}}
+
+
+
