@@ -29,7 +29,7 @@ Noi potremmo scegliere di non sapere come si calcoli l'area del quadrato, eppure
 
 Io scelgo di mettere una funzione riutilizzabile così che non debba fare lo stesso calcolo più volte ma utilizzando una semplicissima funzione.
 
-Ogni teorema, ogni scoperta scoperta scientifica, si basa su questi "strati" e costruendoci su si è riusciti a risolvere grandi problemi richiedendo meno sforzo di quanto necessario. 
+Ogni teorema, ogni scoperta scientifica, si basa su questi "strati" e costruendoci su si è riusciti a risolvere grandi problemi richiedendo meno sforzo di quanto necessario. 
 
 Consapevolmente scegli di mettere da parte la conoscenza di com'è fatto quello strumento per permetterti di poterlo utilizzare senza che tu debba ripetutamente sbattere la testa contro il muro o piangere sui libri. 
 
