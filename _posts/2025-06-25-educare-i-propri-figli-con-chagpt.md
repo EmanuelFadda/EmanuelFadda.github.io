@@ -27,7 +27,7 @@ L'esempio sopra è molto semplice, si dichiara una funzione per il calcolo dell'
 
 Noi potremmo scegliere di non sapere come si calcoli l'area del quadrato, eppure la funzione "calcola_area_quadrato()" è a nostra disposizione per la risoluzione del problema. 
 
-Io scelgo di mettere una funzione riutilizzabile così che non debba fare lo stesso calcolo più volte ma utilizzando una semplicissima funzione.
+Io scelgo di mettere una funzione riutilizzabile così che non debba fare lo stesso calcolo più volte.
 
 Ogni teorema, ogni scoperta scientifica, si basa su questi "strati" e costruendoci su si è riusciti a risolvere grandi problemi richiedendo meno sforzo di quanto necessario. 
 
@@ -37,7 +37,7 @@ Per chi non passa la vita a smadonnare sul codice e  non avesse ancora capito co
 
 In questo momento stai guardando questo post in un dispositivo di cui non hai la più pallida idea di come sia stato costruito, eppure lo utilizzi tranquillamente senza farti troppi problemi. 
 
-Certo essere più consapevole di come vengono fatte le cose ti aiuterebbe in un utilizzo più consapevole e per darti una marcia in più, ma non è necessario
+Certo essere più consapevole di come vengano fatte le cose ti aiuterebbe in un utilizzo più consapevole e per darti una marcia in più, ma non è necessario
 
 Semplicemente scegliamo di rimanere ignoranti perchè non è affar nostro e avremmo molto altro da fare che deprimerci sulla costruzione da zero di un computer (per non parlare della parte software).
 
@@ -53,7 +53,7 @@ Perchè potremmo replicare tale concetto al modo in cui ci formiamo le nostre op
 
 Ognuno si informa, nel bene o nel male, da fonti, dati, opinioni prese e costruite da altre persone, di cui più o meno siamo in grado di verificarne la veridicità. 
 
-Nel ricavare informazioni, noi ci "fidiamo", sperando che chiunque crei quelle informazioni abbia lo scopo di fare informazione, di raccontare la "realtà".
+Nel ricavare informazioni, noi ci "fidiamo", sperando che chiunque crei queste abbia lo scopo di fare informazione, di raccontare la "realtà".
 
 L'astrazione è livello umano è un atto di "fiducia": si costruisce sopra supponendo che le costruzioni logiche dietro siano corrette, e ci costruiamo la nostra realtà. 
 
@@ -63,13 +63,13 @@ E' un problema che è sempre esistito. Ma qui, viste le proporzioni di questo ti
 
 Potremmo mitigare il problema, se siamo furbi potremmo incrociare le fonti e dare opinioni in base a ricerche approfondite, ma chi ha tempo? 
 
-Quanti hanno l'effettiva consapevolezza su cosa basano le proprie opinioni? E chi è così umile da riconoscere di non avere sempre i mezzi con cui interpretare la realtà in maniera critica?
+Quanti hanno l'effettiva consapevolezza sul cosa basano le proprie opinioni? E chi è così umile da riconoscere di non avere sempre i mezzi con cui interpretare la realtà in maniera critica?
 
 Vogliamo veramente far finta di niente e chiudere gli occhi davanti alle conseguenze nell'affidare quali informazioni farci fornire a terzi? 
 
 Immaginatevi vedere generazioni intere che dimenticano l'utilizzo di un motore di ricerca, di leggere un libro, un articolo..  e affidare le loro intera conoscenza del mondo a ChatGPT. 
 
-Gli LLM permettono di aggiungere un ulteriore livello di astrazione rispetto ai motori di ricerca: di fatto non ci preoccupiamo più di quali siano i siti da cui informarsi, ci viene già dato il risultato alla nostra domanda. 
+Gli LLM permettono di aggiungere un ulteriore livello di astrazione rispetto ai motori di ricerca: di fatto non ci preoccupiamo più di quali siano i siti da cui informarsi: ci viene già dato il risultato alla nostra domanda. 
 
 Non dovremmo più sbatterci nel cercare nei vari siti le informazioni utili per rispondere al problema. Questo con tutte le conseguenze del caso. 
 
