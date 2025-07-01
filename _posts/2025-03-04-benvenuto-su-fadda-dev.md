@@ -9,9 +9,13 @@ tag_name: "blog"
 
 
 
-Aggiornamenti 🎉:
+Lista di aggiornamenti del sito 🎉:
 
-- 2025-03-10: creata la sezione Projects 💻
-- 2025-03-04: creata la sezione Blog ✍️
-- 2025-06-26: cambiato lo stile di fadda.dev 
- 
+
+## 2025 
+- 2025-07-01 Finito il form dei contatti 📬
+- 2025-06-26: Cambiato lo stile di fadda.dev 🖌️
+- 2025-03-10: Creata la sezione Projects 💻
+- 2025-03-04: Creata la sezione Blog ✍️
+
+

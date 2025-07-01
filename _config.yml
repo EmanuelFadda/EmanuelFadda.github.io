@@ -24,6 +24,7 @@ kramdown:
   emoji: true
 
 
+
 title: Fadda.dev
 
 baseurl: "" # the subpath of your site, e.g. /blog

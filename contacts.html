@@ -2,6 +2,8 @@
 permalink: /contacts
 layout: default
 ---
+
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <style>
     .first_p{
         font-weight: bold;
@@ -59,27 +61,28 @@ layout: default
             <div class=" m-2 card text-center">
                 <div class="card-body">
                     <p> Contattami </p>
-                    <form>
+                    <form action="https://formspree.io/f/mdkzbvaj" method="POST">
                         <div class="form-row">
                             <div class="col-sm my-1">
-                                <input type="text" class="form-control" placeholder="Nome">
+                                <input type="text" name="name" required maxlength="30" class="form-control" placeholder="Who are you?">
                             </div>
                             <div class="col-sm my-1">
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" name="email" maxlength="30" class="form-control" placeholder="Email">
                             </div>
                             <div class="col my-1">
                                 <div class="row ">
                                     <div class="col">
-                                        <input type="text"  pattern="[0-9]{15}" class="form-control" placeholder="Number">
+                                        <input type="tel" name="phone_number" maxlength="15" class="form-control" placeholder="+XX 123 456 7890">
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="Link">
+                                        <input type="text" name="link" maxlength="40" class="form-control" placeholder="Link">
                                     </div>
                                 </div>
                             </div>
-                            <textarea class="form-control" rows="5" placeholder="Scrivi qualcosa" ></textarea>
+                            <textarea class="form-control" required maxlength="200" name="message" rows="5" placeholder="Write something.." ></textarea>
                             <div class="my-3">
-                                <button disabled type="submit"><b>Invio<b></button>
+                                <div class="h-captcha" data-sitekey="f504b992-1bf2-4288-9f2a-d9eea7e4f6a6"></div>
+                                <button type="submit"><b>Invio<b></button>
                             </div>
                         </div>
                       </form>
@@ -88,3 +91,6 @@ layout: default
         </div>
     </div>
 </div>
+
+
+
