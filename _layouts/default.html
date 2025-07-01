@@ -32,7 +32,21 @@
             display:flex;
             flex-direction: column;
         }
-        #center-content{ flex-grow: 1; }    
+        #center-content{ flex-grow: 1; }  
+
+        #center-content a:link {
+        color: #6152cc; /* viola chiaro per link normali */
+        }
+
+        #center-content a:visited {
+        color: #4b0082; /* viola più scuro per link visitati */
+        }
+
+        #center-content ::selection {
+        color: white;        /* colore del testo selezionato */
+        background:  #6152cc;    /* colore dello sfondo del testo selezionato */
+        }
+
     </style>
 </head>
 <body>
