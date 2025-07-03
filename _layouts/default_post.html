@@ -6,12 +6,14 @@ layout: blog
 
 <!-- questo sarebbe il layout predefinito dei post-->
 
-<div>
+
+
+<div style="font-family: 'Times New Roman', serif;">
     <h1>{{page.title}}</h1> 
-    {% if page.image_url %}
-        <img src="{{page.url_image}}">
+    {% if page.url_image %}
+        <img class="my-1 rounded img-fluid" src="{{page.url_image}}">
     {% endif %}
-    
+
 </div>
 <hr>
 <div class="content">

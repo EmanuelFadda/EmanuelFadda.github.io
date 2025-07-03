@@ -24,44 +24,16 @@ layout: default
     {% if site.posts.size == 0 %}
         <p>No posts...yet.</p>
     {% else %}
-        {% if false %}
-            <div id="best_posts" class="my-1">
-                <h2>Best of...</h2>
-                <div class="row justify-content-center">
-                    <div class="col-9 text-center">
-                        <h2>Titolo</h2>
-                        <img src="assets/images/Gmail.svg" class="img-fluid">
-                    </div>
-                    <div class="col-md-3 row">
-                        <div class="col-12 m-2">
-                            post2
-                        </div>
-                        <hr class="m-0">
-                        <div class="col-12 m-2">
-                            post3
-                        </div>
-                        <hr class="m-0">
-                        <div class="col-12 m-2">
-                            post 4
-                        </div>
-                    </div>  
-                </div>
-                <hr>
-            </div>
-        {% endif %} 
-        <div id="recent_posts" class="row my-1">
+        <div id="recent_posts" class="my-3">
             <h2>Post recenti:</h2>
                 {% for post in site.posts %}
                     <div>
                         <a style="text-decoration: none;color:white" href="{{ post.url }}">
                             <div class="container">
-                                <div class="row">
-                                    <div class="col-md text-truncate">
-                                        <h3>{{post.title}}</h3>
-                                    </div>
-
-                                    <div class="col">{{ post.date | date_to_string }}</div>
+                                <div class="text-truncate">
+                                    <h3>{{post.title}}</h3>
                                 </div>
+                                {{ post.date | date_to_string }}        
                                 <p>{{post.description}}</p>
                             </div>
                         </a>
