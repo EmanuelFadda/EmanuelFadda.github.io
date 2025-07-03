@@ -9,13 +9,13 @@ layout: blog
 
 
 <div style="font-family: 'Times New Roman', serif;">
-    <h1>{{page.title}}</h1> 
+    <h1 style="text-align: justify;">{{page.title}}</h1> 
     {% if page.url_image %}
         <img class="my-1 rounded img-fluid" src="{{page.url_image}}">
     {% endif %}
-
+    <p class="m-2" style="text-align: right;">Pubblicato il {{page.date| date_to_string}}</p>
 </div>
-<hr>
+<hr class="mt-0">
 <div class="content">
     {{content}}
 </div>
