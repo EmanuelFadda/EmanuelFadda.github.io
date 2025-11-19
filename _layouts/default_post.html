@@ -5,25 +5,28 @@ layout: blog
 
 
 <!-- questo sarebbe il layout predefinito dei post-->
-
+<head>
+<head>
 {% if page.title %}
-<meta property="og:title" content="{{ page.title }}">
-<meta name="twitter:title" content="{{ page.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
 {% endif %}
 
 {% if page.description %}
-<meta property="og:description" content="{{ page.description }}">
-<meta name="twitter:description" content="{{ page.description }}">
+<meta property="og:description" content="{{ page.description | default: 'Nessuna descrizione disponibile' }}">
 {% endif %}
 
 {% if page.url_image %}
 <meta property="og:image" content="{{ page.url_image | absolute_url }}">
-<meta name="twitter:image" content="{{ page.url_image | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
 {% endif %}
 
-{% if page.url %}
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-{% endif %}
+<meta property="og:url" content="{{ page.url | default: page.permalink | absolute_url }}">
+<meta property="og:type" content="article">
+</head>
+
+
+</head>
 
 
 <div style="font-family: 'Times New Roman', serif;">
