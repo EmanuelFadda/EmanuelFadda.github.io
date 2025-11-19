@@ -3,7 +3,7 @@ layout: default_post
 title:  "Educare i propri figli con ChatGPT.. "
 date:   2025-06-25
 description: ""
-url_image: "/assets/images/copertina1.png"
+url_image: "/assets/images/copertina1.jpg"
 tag_name: "blog"
 ---
 
