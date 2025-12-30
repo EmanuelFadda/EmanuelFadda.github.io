@@ -25,10 +25,12 @@ kramdown:
 
 
 
+
 title: Fadda.dev
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fadda.dev" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: blog/:title
 
 
 url_images: /assets/images

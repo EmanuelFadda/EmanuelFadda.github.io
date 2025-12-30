@@ -13,6 +13,7 @@ tag_name: "blog"
 È da ormai un annetto che mi capita di andare a eventi per informatici insieme ad alcuni miei amici. Lo consiglio a chiunque voglia immergersi nell'ambiente e scoprire cose nuove. Può non essere sempre così divertente ed emozionante, ma è sempre bello conoscere gente che è sulla stessa lunghezza d'onda o che magari è più brava di te. 
 
 L'illuminazione per questo post mi è venuta ascoltando i diversi discorsi del Linux Day di Modena di quest'anno. L'evento si è tenuto nella mia vecchia scuola superiore, in orario di lezione, e le presentazioni sono state ascoltate anche dagli studenti oltre che ai partecipanti dell'evento, persone esterne dal mondo dell'informatica.   
+
 Il discorso sulla privacy (in quanto protezione dei dati sensibili) è stato tirato più volte e in diversi contesti. Ma addirittura lì, a un evento di informatici, era come se chi fosse esterno non  recepisse l'importanza di una buona sicurezza su internet.
 
 È come se chi comunicasse tale pericolo vivesse in una bolla: diamo spiegazioni raffazonate a noi ovvie pensando che il messaggio venga già percepito come tale. Crediamo di esistere solo noi informatici, e che tutti ragionino uguale.
@@ -46,6 +47,7 @@ Nonostante il pericolo esista, non tratterò del caso in cui si punti su una per
 ## Perchè le tue informazioni sono utili?
 
 È perchè grazie a queste che le aziende che sviluppano servizi possono comprendere le tue necessità e implementare strategie volte al pieno soddisfacimento dei tuoi bisogni, così che tu possa avere una buona esperienza e ritornare a usufruirne.
+
 Non si tratta di sapere chi tu sia,  ma si cerca di "stimare"  a che tipo di categoria tu possa appartenere. Da lì è molto probabile presupporre anche cosa sarai disposto a seguire e che cosa cerchi attorno a te. 
 
 È semplice marketing. Quindi dove dovrebbe stare il problema? 
@@ -54,7 +56,7 @@ Avere sempre questi servizi a portata di mano sviluppati per darci sempre ciò c
 
 L'enorme esposizione verso questi strumenti e il forte valore identitario che abbiamo nei confronti di contenuti, post e idee che ci circondiamo porterebbe chiunque a non mettersi più in discussione. 
 
-<a href="{{site.baseurl}}/2025/06/25/educare-i-propri-figli-con-chagpt">Ho già trattato di come noi creiamo congetture e pensieri logici, "<b><i>fidandoci</i></b>" delle fonti e "<b><i>astraendo</i></b>" la complessità delle informazioni che ci vengono date.</a>
+<a href="{{site.baseurl}}/blog/educare-i-propri-figli-con-chagpt">Ho già trattato di come noi creiamo congetture e pensieri logici, "<b><i>fidandoci</i></b>" delle fonti e "<b><i>astraendo</i></b>" la complessità delle informazioni che ci vengono date.</a>
 
 Siamo in un mondo in cui si possono ricevere infinite realtà prefabbricate, indirizzate e scelte da algoritmi fatti per aumentare l'engagement.
 

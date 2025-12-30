@@ -17,6 +17,11 @@ layout: default
         }
     }
 
+    .post{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    }
 
 </style>
 
@@ -27,12 +32,10 @@ layout: default
         <div id="recent_posts" class="my-3">
             <h2>Post recenti:</h2>
                 {% for post in site.posts %}
-                    <div>
+                    <div class="post">
                         <a style="text-decoration: none;color:white" href="{{ post.url }}">
                             <div class="container">
-                                <div class="text-truncate">
-                                    <h3>{{post.title}}</h3>
-                                </div>
+                                <h3>{{post.title}}</h3>
                                 {{ post.date | date_to_string }}        
                                 <p>{{post.description}}</p>
                             </div>

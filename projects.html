@@ -11,7 +11,7 @@ layout: default
     
 </style>
 
-    <div class="container mx-auto text-center " style="color:white">
+    <div class="container mx-auto text-center ">
         {% if site.data.projects.size == 0 %}
             <div>
                 <p>No projects...yet.</p>                
@@ -31,11 +31,11 @@ layout: default
                                 <div class="card-body text-center d-flex align-items-center">
                                     <p>{{project.description}}</p>  
                                 </div>
-                                <div class="card-footer">
+                                <div class="card-footer" >
                                     {% if project-link %}
-                                        <a href="{{project.link}}">Host link</a> 
+                                        <a style="color:black" href="{{project.link}}">Host link</a> 
                                     {% endif %}
-                                    <a href="{{project.github}}">Github</a>
+                                    <a style="color:black" href="{{project.github}}">Github</a>
                                 </div>
                             </div>
                         </div> 
