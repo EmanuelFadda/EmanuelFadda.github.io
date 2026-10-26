@@ -1,7 +1,7 @@
 ---
 layout: default_post
 title:  "Ho provato ad automatizzare i miei social con l'AI"
-date:   2026-06-26
+date:   2026-10-26
 description: ""
 url_image: "/assets/images/3/cover.png"
 tag_name: "blog"
