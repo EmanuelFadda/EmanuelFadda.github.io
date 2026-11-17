@@ -1,19 +1,19 @@
 ---
 layout: default_post
-title:  "Writing as an healthy coping activity"
-date:   2026-11-10
+title:  "Writing as a healthy coping activity"
+date:   2026-11-16
 description: ""
 url_image: "/assets/images/4/cover.jpg"
 tag_name: "blog"
 ---
  
-I've been in a lot of things in the these years, and in the last 3 months I was searching if there's a way to focus when everything goes wrong: if there's something healthy to cope with when I have a lot of things in my head.
+I've been in a lot of things in these years, and in the last 3 months I was searching if there's a way to focus when everything goes wrong: if there's something healthy to cope with when I have a lot of things in my head.
 
-I started to get passionate of the concept of finding a way to optimize and improve my brain to focus, when I'm under pressure or distracted, especially when I have a lot of mentally demanding work, like studing or coding.
+I started to get passionate of the concept of finding a way to optimize and improve my brain to focus, when I'm under pressure or distracted, especially when I have a lot of mentally demanding work, like studying or coding.
 
 I found out that when something is not easy to solve or understand, the first thing my brain does is to escape from the task I was trying to finish. Finishing wasting hours of thinking about other parts of my life. 
 
-This behaviour get worst when something in my life happened and I can't do anything. 
+This behaviour get worse when something in my life happened and I can't do anything. 
 
 So one day, tired of feeling helpless, I found out an old notebook, and I start writing what goes wrong in that moment and how I felt.. and it worked very well! 
 
