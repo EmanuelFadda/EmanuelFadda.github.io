@@ -5,6 +5,7 @@ date:   2025-06-25
 description: ""
 url_image: "/assets/images/copertina1.jpg"
 tag_name: "blog"
+id_post: "1"
 ---
 
 Per far comprendere il motivo per cui nutro delle profonde preoccupazioni sul futuro dell'informazione ai tempi dell'intelligenza artificiale,  vorrei spiegare il concetto di astrazione in informatica. 

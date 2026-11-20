@@ -5,6 +5,7 @@ date:   2026-10-26
 description: ""
 url_image: "/assets/images/3/cover.png"
 tag_name: "blog"
+id_post: "3"
 ---
 
 Qualche settimana fa ho iniziato ad approfondire Docker per un corso che sto seguendo, e ho pensato che sarebbe stato carino iniziare a giocare con le varie immagini distribuite in rete. 

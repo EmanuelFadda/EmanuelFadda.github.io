@@ -3,10 +3,8 @@ permalink: /blog
 layout: default
 ---
 
-
 <style>
-    #main_page{            
-        background-color: #181A1B;
+    #main_page{
         color: white;
         font-family: Georgia, serif;
     }
@@ -17,31 +15,82 @@ layout: default
         }
     }
 
-    .post{
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    /* Lista dei post */
+    .post-list{
+        list-style: none;
+        margin: 16px 0 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .post-list li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .post-list a{
+        display: block;
+        padding: 18px 4px;
+        color: white;
+        text-decoration: none;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    .post-list a:hover,
+    .post-list a:focus{
+        color: white;
+        text-decoration: none;
+    }
+    .post-meta{
+        display: block;
+        margin-bottom: 4px;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 11px;
+        opacity: .6;
+    }
+    .post-title{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.3;
+    }
+    .post-desc{
+        display: block;
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 1.5;
+        opacity: .75;
+    }
+
+    @media (max-width: 576px) {
+        .post-list a{
+            padding: 14px 2px;
+        }
+        .post-title{
+            font-size: 18px;
+        }
     }
 </style>
 
-<div id="main_page"  class="container-md">
+<div id="main_page" class="container-md">
     {% if site.posts.size == 0 %}
         <p>No posts...yet.</p>
     {% else %}
         <div id="recent_posts" class="my-3">
-            <h2>Post recenti:</h2>
+            <h2>Recent Posts:</h2>
+            <ul class="post-list">
                 {% for post in site.posts %}
-                    <div class="post">
-                        <a style="text-decoration: none;color:white" href="{{ post.url }}">
-                            <div class="container">
-                                <h3>{{post.title}}</h3>
-                                {{ post.date | date_to_string }}        
-                                <p>{{post.description}}</p>
-                            </div>
+                    <li{% if post.id_post %} id="post-{{ post.id_post }}"{% endif %}>
+                        <a href="{{ post.url | relative_url }}">
+                            <span class="post-meta">
+                                {% if post.id_post %}#{{ post.id_post }} &middot; {% endif %}{{ post.date | date: "%d/%m/%Y" }}
+                            </span>
+                            <span class="post-title">{{ post.title }}</span>
+                            {% if post.description %}
+                                <span class="post-desc">{{ post.description }}</span>
+                            {% endif %}
                         </a>
-                        <hr>
-                    </div>
+                    </li>
                 {% endfor %}
+            </ul>
         </div>
     {% endif %}
 </div>

@@ -3,51 +3,125 @@ permalink: /contacts
 layout: default
 ---
 
-<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <style>
     .first_p{
         font-weight: bold;
         font-style: italic;
         font-size: 28px;
         line-height: 33px;
-        color:white
+        color: white;
     }
     .second_p{
         font-size: 13px;
-        color:white
-    }
-    .card-body{
-        font-weight: bold;
-        font-family: Inter ;
-        color: black
-    }
-    @media (max-width: 768px) { 
-        .first_p , .second_p{
-          text-align:center;
-        }
-        .socials{
-            display: none;
-        }
-    }
-    button{
-        background-color:black;
-        color:white;
-        padding:7px 20px;
-        border-radius: 10px;
+        color: white;
     }
 
-    @media (min-width: 992px) { 
+    /* Card bianca con la lista contatti */
+    .contact-list{
+        margin: 8px 0;
+        padding: 6px 20px;
+        background: white;
+        border-radius: 6px;
+    }
+    .contact-row{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 4px;
+        border-bottom: 1px solid #e2e2e2;
+        color: black;
+        font-family: Inter, sans-serif;
+        text-decoration: none;
+        transition: padding-left .2s ease;
+    }
+    .contact-row:last-child{
+        border-bottom: none;
+    }
+    .contact-row:hover,
+    .contact-row:focus{
+        color: black;
+        text-decoration: none;
+        padding-left: 12px;
+    }
+    .contact-row img{
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        filter: brightness(0); /* icone nere su sfondo bianco */
+    }
+    .contact-name{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        flex-shrink: 0;
+    }
+    .contact-username{
+        margin-left: auto;
+        min-width: 0;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 12px;
+        color: #555;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: color .2s ease;
+    }
+    .contact-row:hover .contact-username{
+        color: black;
+    }
+
+    @media (max-width: 768px) {
+        #main_page{
+            max-width: 100%;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        #main_page .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        #main_page .col-md{
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+        .first_p, .second_p{
+            text-align: center;
+        }
+        .first_p{
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .contact-list{
+            margin-top: 20px;
+            padding: 2px 12px;
+        }
+        .contact-row{
+            gap: 10px;
+            padding: 12px 2px;
+        }
+    }
+    @media (max-width: 400px) {
+        .first_p{
+            font-size: 21px;
+            line-height: 26px;
+        }
+        .contact-list{
+            padding: 2px 10px;
+        }
+        .contact-name{
+            font-size: 14px;
+        }
+        .contact-username{
+            font-size: 11px;
+        }
+    }
+    @media (min-width: 992px) {
         #main_page{
             max-width: 60%;
         }
     }
 </style>
 
-
-
-{% if true %}
-not now ... 
-{% else  %}
 <div id="main_page" class="container my-auto">
     <div class="row my-1">
         <div class="col-md my-auto">
@@ -55,44 +129,26 @@ not now ...
                 Sei un'azienda o hai qualche progetto interessante da presentarmi?<br>
                 Teniamoci in contatto!
             </p>
-            <p class="second_p">E' sempre bello scambiarsi idee e fare nuove conoscenze. Se il mio profilo ti interessa non pensarci due volte a scrivermi!</p>
-            <div class="socials">
-                {% for s in site.social_media %}
-                    <a href="{{s.url}}" class="mx-1"><img src="{{site.url_images}}/{{s.social}}.svg" width="20px" alt="{{s.social}}"></a>
-                {% endfor %} 
-            </div>
+            <p class="second_p">
+                E' sempre bello scambiarsi idee e fare nuove conoscenze. Se il mio profilo ti interessa non pensarci due volte a scrivermi!
+            </p>
         </div>
-        <div class="col-md ">
-            <div class=" m-2 card text-center">
-                <div class="card-body">
-                    <p> Contattami </p>
-                    <form action="https://formspree.io/f/mdkzbvaj" method="POST">
-                        <div class="form-row">
-                            <div class="col-sm my-1">
-                                <input type="text" name="name" required maxlength="30" class="form-control" placeholder="Who are you?">
-                            </div>
-                            <div class="col-sm my-1">
-                                <input type="text" name="email" maxlength="30" class="form-control" placeholder="Email">
-                            </div>
 
-                            <textarea class="form-control" required maxlength="200" name="message" rows="5" placeholder="Write something.." ></textarea>
-                            <div class="my-3">
-                                <label style="font-size:10px;display:block; margin-bottom: 10px;">
-                                <input type="checkbox" name="consenso_privacy" required>
-                                Acconsento al trattamento dei miei dati personali secondo la <a href="https://www.iubenda.com/privacy-policy/51665975" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-                                </label>
-                                <div class="h-captcha" data-sitekey="f504b992-1bf2-4288-9f2a-d9eea7e4f6a6"></div>
-                                <button type="submit"><b>Invio<b></button>
-                            </div>
-                        </div>
-                      </form>
-                </div>
+        <div class="col-md my-auto">
+            <div class="contact-list">
+                {% for s in site.social_media %}
+                    {% if s.url contains "mailto:" %}
+                        {% assign link_target = "" %}
+                    {% else %}
+                        {% assign link_target = 'target="_blank" rel="noopener noreferrer"' %}
+                    {% endif %}
+                    <a href="{{ s.url }}" class="contact-row" aria-label="{{ s.social }}: {{ s.username }}" {{ link_target }}>
+                        <img src="{{ site.url_images }}/{{ s.social }}.svg" alt="" aria-hidden="true">
+                        <span class="contact-name">{{ s.social }}</span>
+                        <span class="contact-username">{{ s.username }}</span>
+                    </a>
+                {% endfor %}
             </div>
         </div>
     </div>
 </div>
-{% endif %}
-
-
-
-

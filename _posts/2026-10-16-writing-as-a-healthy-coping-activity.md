@@ -5,6 +5,7 @@ date:   2026-11-16
 description: ""
 url_image: "/assets/images/4/cover.jpg"
 tag_name: "blog"
+id_post: "4"
 ---
  
 I've been in a lot of things in these years, and in the last 3 months I was searching if there's a way to focus when everything goes wrong: if there's something healthy to cope with when I have a lot of things in my head.

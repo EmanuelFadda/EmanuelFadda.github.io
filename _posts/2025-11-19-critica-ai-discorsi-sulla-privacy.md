@@ -5,6 +5,7 @@ date:   2025-11-19
 description: ""
 url_image: "/assets/images/copertina2.jpg"
 tag_name: "blog"
+id_post: "2"
 ---
 
 

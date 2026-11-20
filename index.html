@@ -4,29 +4,124 @@ layout: default
 ---
 
 <style>
-    h1{color:white}
-    button{
-        background-color:black;
-        color:white;
-        padding:7px 20px;
-        border-radius: 10px;
+    h1{
+        color: white;
+        margin: 0 0 8px;
     }
     p{
-        color:white;
-        font-size:15px;
+        color: white;
+        font-size: 15px;
+        margin: 0;
     }
 
     #intro{
-        text-align:center;
+        text-align: center;
     }
     @media (min-width: 768px) { 
         #main_page{
             max-width: 70%;
         }
     }
-    
-    
-  
+
+    /* Foto e crediti */
+    #intro .photo-wrap{
+        width: 140px;
+        margin: 24px auto;
+    }
+    #intro .photo{
+        display: block;
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    #intro .photo-credit{
+        margin-top: 6px;
+        font-size: 11px;
+        text-align: left;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    #intro .photo-credit a{
+        color: inherit;
+        text-decoration: underline;
+    }
+    #intro .photo-credit a:hover,
+    #intro .photo-credit a:focus{
+        color: white;
+    }
+
+    #intro .subtitle{
+        font-weight: bold;
+    }
+
+    /* Lista delle sezioni */
+    .section-list{
+        list-style: none;
+        margin: 32px auto 0;
+        padding: 0;
+        max-width: 480px;
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .section-list li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .section-list a{
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        padding: 14px 4px;
+        color: white;
+        font-family: Inter, sans-serif;
+        text-decoration: none;
+        transition: padding-left .2s ease;
+    }
+    .section-list a:hover,
+    .section-list a:focus{
+        color: white;
+        text-decoration: none;
+        padding-left: 12px;
+    }
+    .section-list .num{
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 11px;
+        opacity: .6;
+    }
+    .section-list .title{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .section-list .desc{
+        margin-left: auto;
+        font-size: 12px;
+        opacity: .65;
+        text-align: right;
+    }
+
+    @media (max-width: 576px) {
+        #intro .photo-wrap{
+            width: 120px;
+            margin: 20px auto;
+        }
+        #intro .photo{
+            width: 120px;
+            height: 120px;
+        }
+        .section-list{
+            margin-top: 24px;
+        }
+        .section-list a{
+            flex-wrap: wrap;
+            row-gap: 2px;
+        }
+        .section-list .desc{
+            flex-basis: 100%;
+            margin-left: 0;
+            padding-left: 28px;   /* allinea la descrizione al titolo, sotto il numero */
+            text-align: left;
+        }
+    }
 </style>
 
 <div id="main_page" class="container mx-auto my-auto">
@@ -34,16 +129,43 @@ layout: default
     <div class="col mx-auto">
         <div class="row">
             <div id="intro" class="col-sm">              
-                <h1>Benvenuto su fadda.dev</h1>
-                <p>Ciao mi chiamo Emanuel Fadda!
-                <br>    
-                Computer Science Student | Tech Enthusiast | Creator of fadda.dev</p>
-                <button onclick="location.href+='/blog'"><b>Blog</b></button>
-                <button onclick="location.href+='/projects'"><b>Projects</b></button>
+                <h1>Welcome to fadda.dev</h1>
+                <p>Hello, I'm Emanuel Fadda!</p>
+
+                <figure class="photo-wrap">
+                    <img src="{{ site.url_images }}/me.jpeg" class="photo" alt="Emanuel Fadda">
+                    <figcaption class="photo-credit">
+                        Thanks to <a href="https://example.com/rasti" target="_blank" rel="noopener noreferrer">Rasti</a> for the pic
+                    </figcaption>
+                </figure>
+
+                <p class="subtitle">Computer Science Student | Tech Enthusiast | Creator of fadda.dev</p>
+
+                <ul class="section-list">
+                    <li>
+                        <a href="{{ '/blog' | relative_url }}">
+                            <span class="num">01</span>
+                            <span class="title">Blog</span>
+                            <span class="desc">Articles and notes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ '/projects' | relative_url }}">
+                            <span class="num">02</span>
+                            <span class="title">Projects</span>
+                            <span class="desc">What I'm building</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ '/contacts' | relative_url }}">
+                            <span class="num">03</span>
+                            <span class="title">Contacts</span>
+                            <span class="desc">Let's stay in touch</span>
+                        </a>
+                    </li>
+                </ul>
             </div>        
         </div> 
     </div>
     </div>
 </div>
-
-
