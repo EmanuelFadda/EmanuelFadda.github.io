@@ -14,28 +14,53 @@
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
     
     <style>
-        body{
-            background-color: #181A1B;
-            width:100%;
-            height: 100%;
-            color:white
-        }
-        #site{
-            position:fixed;
-            padding:0;
-            margin:0;
-            top:0;
-            left:0;
-            width: 100%;
-            height: 100%;
-            display:flex;
-            flex-direction: column;
-            overflow: auto;
-        }
+        body {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    #site {
+        position: fixed;
+        inset: 0;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        background: transparent;
+    }
+
+    /* Livello fisso ancorato a tutti e 4 i bordi dello schermo */
+    .sfondo-stelle {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background-color: #000000;
+        background-image: 
+            radial-gradient(#ffffff 1px, transparent 1px),
+            radial-gradient(#e6e6e6 1px, transparent 1px),
+            radial-gradient(#cccccc 1px, transparent 1px),
+            radial-gradient(#b3b3b3 1px, transparent 1px),
+            radial-gradient(#999999 1px, transparent 1px),
+            radial-gradient(#808080 1px, transparent 1px),
+            radial-gradient(#666666 1px, transparent 1px),
+            radial-gradient(#4d4d4d 1px, transparent 1px),
+            radial-gradient(#333333 1px, transparent 1px),
+            radial-gradient(#222222 1px, transparent 1px);
+        background-size: 
+            311px 311px, 257px 257px, 199px 199px, 173px 173px, 149px 149px,
+            127px 127px, 107px 107px, 89px 89px, 73px 73px, 59px 59px;
+        background-position: 
+            15px 40px, 110px 180px, 50px 90px, 140px 20px, 80px 130px,
+            30px 70px, 90px 15px, 45px 55px, 20px 35px, 10px 15px;
+    }
         #content{
             flex-grow:1;
             display:flex;
             flex-direction: column;
+        
         }
         #center-content{ flex-grow: 1; }  
 
@@ -59,9 +84,12 @@
         li::marker {
             color: white;
         }
+
+
     </style>
 </head>
 <body>
+    <div class="sfondo-stelle"></div>
     <div id="site">
         <div class="sticky-top" id="header">
             {% include header.html %}  
@@ -70,7 +98,6 @@
             <div id="center-content" class="d-flex">
                 {{ content }}
             </div>
-
         </div>
     </div>
 </body>
